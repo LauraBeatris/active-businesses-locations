@@ -1,5 +1,9 @@
-import { Router } from 'express';
+import { Router } from 'express'
 
-const routes = Router();
+import businessesRoutes from '@domains/businesses/infra/http/routes/businesses.routes'
 
-export default routes;
+const routes = Router()
+
+routes.use('/businesses', businessesRoutes)
+
+export default routes
