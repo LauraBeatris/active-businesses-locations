@@ -6,14 +6,19 @@ class GetBusinessWithMostLocations {
   run (businesses: Business[]) {
     const groupBusinessesByName = map(businesses, 'business_name')
 
-    const businessWithMostLocations = chain(groupBusinessesByName)
+    const [
+      business_name,
+      locations_count
+    ] = chain(groupBusinessesByName)
       .countBy()
       .toPairs()
       .maxBy(([, businessCount]) => businessCount)
-      .head()
       .value()
 
-    return businessWithMostLocations
+    return {
+      business_name,
+      locations_count
+    }
   }
 }
 

@@ -10,6 +10,6 @@ describe('GetBusinessWithMostLocations', () => {
 
   it('should return business with the most locations', () => {
     expect(getBusinessWithMostLocationsService.run(fakeBusinesses))
-      .toBe(fakeBusinessWithMostLocations.business_name)
+      .toEqual(fakeBusinessWithMostLocations)
   })
 })

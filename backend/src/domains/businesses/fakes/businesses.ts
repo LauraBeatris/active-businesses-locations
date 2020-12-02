@@ -6,17 +6,20 @@ export const fakeOldestBusiness = {
 }
 
 export const fakeBusinessWithMostLocations = {
-  business_name: 'A OFICINA CENTRAL HISPANA DE LOS ANGELES /C'
+  business_name: 'A OFICINA CENTRAL HISPANA DE LOS ANGELES /C',
+  locations_count: 2
 }
+
+const { business_name } = fakeBusinessWithMostLocations
 
 export const fakeBusinesses: Business[] = [
   fakeOldestBusiness,
   {
-    ...fakeBusinessWithMostLocations,
+    business_name,
     location_start_date: '1991-01-01T00:00:00.000'
   },
   {
-    ...fakeBusinessWithMostLocations,
+    business_name,
     location_start_date: '1991-01-01T00:00:00.000'
   },
   {
