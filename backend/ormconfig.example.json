@@ -1,0 +1,11 @@
+{
+  "name": "mongo",
+  "type": "mongodb",
+  "host": "localhost",
+  "port": 27017,
+  "database": "businesses",
+  "entities": [
+    "./src/domains/**/infra/typeorm/schemas/*.ts"
+  ],
+  "useUnifiedTopology": true
+}
