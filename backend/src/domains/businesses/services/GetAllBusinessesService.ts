@@ -5,7 +5,7 @@ import Business from '@domains/businesses/models/Business'
 
 const BUSINESSES_API_ENDPOINT = 'https://data.lacity.org/resource/6rrh-rzua.json'
 
-const LIMIT_PER_PAGE = 20
+const LIMIT_PER_PAGE = 10
 
 class GetAllBusinessesService {
   async run (page: number) {
