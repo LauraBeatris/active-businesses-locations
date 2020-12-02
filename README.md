@@ -4,8 +4,6 @@
 
 > An app to show the list of businesses locations from LA
 
-[![Run in Insomnia}](https://insomnia.rest/images/run.svg)]()
-
 # Backend Instructions
 
 ## Installation
