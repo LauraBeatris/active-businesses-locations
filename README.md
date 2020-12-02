@@ -1,5 +1,5 @@
 <p align="center">
-  <img src=".github/docs/logo.png" width="300"/>
+  <img src=".github/docs/logo.png" width="250"/>
 </p>
 
 > An app to show the list of businesses locations from LA
