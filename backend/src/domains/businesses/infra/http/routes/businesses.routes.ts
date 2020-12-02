@@ -3,7 +3,7 @@ import { Router } from 'express'
 import BusinessesController from '@domains/businesses/infra/http/controllers/BusinessesController'
 import OldestBusinessController from '@domains/businesses/infra/http/controllers/OldestBusinessController'
 import BusinessWithMostLocationsController from '@domains/businesses/infra/http/controllers/BusinessWithMostLocationsController'
-import paginationValidator from '../validators/paginationValidator'
+import paginationValidator from '@domains/businesses/infra/http/validators/paginationValidator'
 
 const businessesRoutes = Router()
 
