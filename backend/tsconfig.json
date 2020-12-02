@@ -1,25 +1,22 @@
 {
   "compilerOptions": {
-    "paths": {
-      "@domains/*": ["domains/*"],
-      "@config/*": ["config/*"],
-      "@shared/*": ["shared/*"],
-    },
-    "strict": true,
     "target": "es5",
     "module": "commonjs",
     "outDir": "./dist",
     "rootDir": "./src",
-    "baseUrl": "src",
-    "esModuleInterop": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": true,
+    "strict": true,
     "strictPropertyInitialization": false,
-    "forceConsistentCasingInFileNames": true,
-  },
-  "exclude": [
-    "node_modules",
-    "dist"
-  ]
+    "baseUrl": "src",
+    "paths": {
+      "@domains/*": ["domains/*"],
+      "@config/*": ["config/*"],
+      "@shared/*": ["shared/*"],
+      "@constants/*": ["constants/*"]
+    },
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "forceConsistentCasingInFileNames": true
+  }
 }
