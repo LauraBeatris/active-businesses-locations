@@ -12,11 +12,9 @@
 
 ### Dependencies 
 
-Clone the project and install the dependencies 
+Install the dependencies 
 ```bash
-git clone git@github.com:LauraBeatris/active-businesses-locations.git
-
-cd active-businesses-locations && yarn install
+cd backend && yarn install
 ```
 
 Create the environment variables based on `.env.example`
