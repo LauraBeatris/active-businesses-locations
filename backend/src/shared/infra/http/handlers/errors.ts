@@ -1,28 +1,28 @@
-import { Request, Response, NextFunction } from 'express';
-import AppError from '@shared/errors/AppError';
+import { Request, Response, NextFunction } from 'express'
+import AppError from '@shared/errors/AppError'
 
 const errorHandler = (
   error: Error,
-  request: Request,
+  _request: Request,
   response: Response,
-  _: NextFunction,
+  _: NextFunction
 ): Response => {
   if (process.env.NODE_ENV === 'development') {
     // eslint-disable-next-line no-console
-    console.error(error);
+    console.error(error)
   }
 
   if (error instanceof AppError) {
     return response.status(error.statusCode).json({
       status: 'error',
-      message: error.message,
-    });
+      message: error.message
+    })
   }
 
   return response.status(500).json({
     status: 'error',
-    message: 'Internal Server Error',
-  });
-};
+    message: 'Internal Server Error'
+  })
+}
 
-export default errorHandler;
+export default errorHandler
