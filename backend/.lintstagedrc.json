@@ -1,0 +1,6 @@
+{
+  "src/**/*.ts": [
+      "yarn lint",
+      "git add"
+  ]
+}
