@@ -1,4 +1,4 @@
-import { RedisOptions } from 'ioredis';
+import { RedisOptions } from 'ioredis'
 
 const redisConfig: RedisOptions = {
   port: Number(process.env.REDIS_PORT) || 6379,
@@ -6,7 +6,7 @@ const redisConfig: RedisOptions = {
   password:
     process.env.NODE_ENV === 'production'
       ? process.env.REDIS_PASSWORD
-      : undefined,
-};
+      : undefined
+}
 
-export default redisConfig;
+export default redisConfig
