@@ -39,11 +39,7 @@ There's also other options to configure a Mongo database, refer to:
 
 ## Getting Started
 
-Run the transactions in order to configure the database schema
-
-```yarn typeorm migration:run```
-
-Run the following command in order to start the application in a development environment
+Run the following command in order to start the application
 
 ```yarn dev```
 
