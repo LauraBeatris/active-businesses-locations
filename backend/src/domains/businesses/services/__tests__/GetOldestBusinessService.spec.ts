@@ -9,6 +9,7 @@ describe('GetOldestBusinessService', () => {
   })
 
   it('should return the oldest business', () => {
-    expect(getOldestBusinessService.run(fakeBusinesses)).toEqual(fakeOldestBusiness)
+    expect(getOldestBusinessService.run(fakeBusinesses))
+      .toEqual(fakeOldestBusiness)
   })
 })
