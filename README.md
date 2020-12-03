@@ -27,13 +27,15 @@ cp .env.example .env
 
 Run the following command in order to start the application
 
-```yarn dev```
+```bash
+yarn dev
+```
 
 ## Build 
 
 Run the following command to build the app 
 
-```
+```bash
 yarn build
 ```
 
@@ -56,13 +58,15 @@ cp .env.example .env
 
 Run the following command in order to start the application
 
-```yarn dev```
+```bash
+yarn dev
+```
 
 ## Build 
 
 Run the following command to build the app 
 
-```
+```bash
 yarn build
 ```
 
