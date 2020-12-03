@@ -3,6 +3,10 @@ import { Spinner, VStack } from '@chakra-ui/react'
 import Business from 'components/Business'
 import useBusinesses from 'hooks/useBusinesses'
 
+const businessListCss = {
+  'overscroll-behavior': 'contain'
+}
+
 const BusinessesList: React.FC = () => {
   const { data, isLoading, isError } = useBusinesses()
 
@@ -13,8 +17,8 @@ const BusinessesList: React.FC = () => {
   if (isLoading) {
     return (
       <Spinner
-        size='lg'
         color='orange.100'
+        size='lg'
       />
     )
   }
@@ -23,8 +27,10 @@ const BusinessesList: React.FC = () => {
     <VStack
       paddingBottom={10}
       spacing={5}
-      width='full'
       overflow='scroll'
+      width='full'
+      height='60vh'
+      css={businessListCss}
     >
       {
         data.map(business => (
