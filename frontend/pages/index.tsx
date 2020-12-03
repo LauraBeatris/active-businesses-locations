@@ -1,18 +1,27 @@
 import Head from 'next/head'
-import { Box, Container } from '@chakra-ui/react'
+import { Flex } from '@chakra-ui/react'
 
 import seoConfig from 'config/seo'
+import Header from 'components/Header'
+
+import MaxWidthContainer from 'components/MaxWidthContainer'
 
 const Main = () => (
   <>
     <Head>
       <title>{seoConfig.title}</title>
     </Head>
-    <Container
+    <Flex
       backgroundColor='orange.100'
-      centerContent
-      minHeight='100vh'
-      maxW='xl'
+      flexDirection='column'
+    >
+      <MaxWidthContainer>
+        <Header />
+      </MaxWidthContainer>
+    </Flex>
+    <Flex
+      backgroundColor='white'
+      flexDirection='column'
     />
   </>
 )
