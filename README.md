@@ -25,6 +25,27 @@ Run the following command in order to start the application
 
 ```yarn dev```
 
+# Frontend Instructions
+
+## Installation
+
+Install the dependencies 
+```bash
+cd frontend && yarn install
+```
+
+Create the environment variables based on `.env.example`
+
+```bash
+cp .env.example .env
+```
+
+## Getting Started
+
+Run the following command in order to start the application
+
+```yarn dev```
+
 # License
 
 Released in 2020.
