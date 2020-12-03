@@ -34,7 +34,10 @@ const BusinessFilters: React.FC<BusinessFiltersProps> = ({
           width='full'
           value={businessFilterValue}
         >
-          <VStack width='full' alignItems='left'>
+          <VStack
+            width='full'
+            alignItems='left'
+          >
             <Radio value={BusinessFiltersValue.MostLocations}>
               Most Locations
             </Radio>
