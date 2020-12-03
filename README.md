@@ -8,8 +8,6 @@
 
 ## Installation
 
-### Dependencies 
-
 Install the dependencies 
 ```bash
 cd backend && yarn install
@@ -20,18 +18,6 @@ Create the environment variables based on `.env.example`
 ```bash
 cp .env.example .env
 ```
-
-### Setup database
-
-Install [Docker](https://docs.docker.com/desktop/) in your machine and then run the following commands in order to create a Mongo container. 
-
-```bash
-docker-compose up
-```
-
-There's also other options to configure a Mongo database, refer to:
-- https://medium.com/swlh/get-up-and-running-with-mongodb-in-under-5-minutes-abc8770b1ef8
-- https://www.mongodb.com/cloud/atlas/signup
 
 ## Getting Started
 

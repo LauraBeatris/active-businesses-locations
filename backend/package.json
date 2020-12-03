@@ -8,7 +8,6 @@
   "scripts": {
     "build": "tsc",
     "dev": "ts-node-dev -r tsconfig-paths/register --transpile-only --ignore node_modules src/shared/infra/http/server.ts",
-    "typeorm": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
     "test": "jest",
     "lint": "eslint --ext .ts --fix"
   },
@@ -23,12 +22,10 @@
     "express-async-errors": "^3.1.1",
     "ioredis": "^4.19.2",
     "lodash": "^4.17.20",
-    "mongodb": "^3.6.3",
     "rate-limiter-flexible": "^2.1.13",
     "redis": "^3.0.2",
     "reflect-metadata": "^0.1.13",
     "tsyringe": "^4.4.0",
-    "typeorm": "^0.2.29",
     "uuidv4": "^6.2.5"
   },
   "devDependencies": {
