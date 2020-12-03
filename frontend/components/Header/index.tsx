@@ -1,4 +1,4 @@
-import { Text, Flex } from '@chakra-ui/react'
+import { Text, Flex, Heading } from '@chakra-ui/react'
 import Image from 'next/image'
 
 import { headerTexts } from './constants'
@@ -22,14 +22,16 @@ const Header: React.FC<HeaderProps> = ({
       height={40}
       width={70}
     />
-    <Text
+
+    <Heading
       fontWeight='semibold'
-      marginTop={1}
+      marginTop={2}
       fontSize='3xl'
       color='white'
     >
       {title}
-    </Text>
+    </Heading>
+
     <Text
       fontWeight='light'
       fontSize='xl'
