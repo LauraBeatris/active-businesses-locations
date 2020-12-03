@@ -8,14 +8,9 @@ import Header from 'components/Header'
 import MaxWidthContainer from 'components/MaxWidthContainer'
 import BusinessFilters from 'components/BusinessFilters'
 import { BusinessFiltersValue } from 'components/BusinessFilters/types'
-import { cpuUsage } from 'process'
 
 const Main = () => {
   const [businessFilterValue, setBusinessFilterValue] = useState(BusinessFiltersValue.All)
-
-  const handleBusinessFilterValueChange = (newBusinessFilterValue: BusinessFiltersValue) => {
-    setBusinessFilterValue(newBusinessFilterValue)
-  }
 
   return (
     <>
@@ -41,7 +36,7 @@ const Main = () => {
             width='full'
           >
             <BusinessFilters
-              handleBusinessFilterValueChange={handleBusinessFilterValueChange}
+              handleBusinessFilterValueChange={setBusinessFilterValue}
               businessFilterValue={businessFilterValue}
             />
           </VStack>
