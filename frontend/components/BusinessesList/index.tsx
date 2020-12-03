@@ -1,5 +1,6 @@
-import { Spinner, VStack } from '@chakra-ui/react'
+import { VStack } from '@chakra-ui/react'
 
+import Spinner from 'components/Spinner'
 import Business from 'components/Business'
 import useBusinesses from 'hooks/useBusinesses'
 
@@ -18,10 +19,7 @@ const BusinessesList: React.FC = () => {
 
   if (isLoading) {
     return (
-      <Spinner
-        color='orange.100'
-        size='lg'
-      />
+      <Spinner />
     )
   }
 

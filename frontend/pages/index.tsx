@@ -5,6 +5,7 @@ import { Flex, VStack } from '@chakra-ui/react'
 import seoConfig from 'config/seo'
 import Header from 'components/Header'
 
+import OldestBusiness from 'components/OldestBusiness'
 import BusinessesList from 'components/BusinessesList'
 import BusinessFilters from 'components/BusinessFilters'
 import MaxWidthContainer from 'components/MaxWidthContainer'
@@ -49,6 +50,12 @@ const Main = () => {
             {
               businessFilterValue === BusinessFiltersValue.All && (
                 <BusinessesList />
+              )
+            }
+
+            {
+              businessFilterValue === BusinessFiltersValue.Oldest && (
+                <OldestBusiness />
               )
             }
           </VStack>
