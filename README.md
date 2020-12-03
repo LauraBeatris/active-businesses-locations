@@ -29,6 +29,14 @@ Run the following command in order to start the application
 
 ```yarn dev```
 
+## Build 
+
+Run the following command to build the app 
+
+```
+yarn build
+```
+
 # Frontend Instructions
 
 ## Installation
@@ -49,6 +57,14 @@ cp .env.example .env
 Run the following command in order to start the application
 
 ```yarn dev```
+
+## Build 
+
+Run the following command to build the app 
+
+```
+yarn build
+```
 
 # License
 
