@@ -1,4 +1,4 @@
-import { chain, map, __ } from 'lodash'
+import { chain, map } from 'lodash'
 
 import Business from '@domains/businesses/models/Business'
 
