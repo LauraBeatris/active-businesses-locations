@@ -4,6 +4,7 @@ const Spinner: React.FC<SpinnerProps> = (props) => (
   <ChakraSpinner
     color='orange.100'
     size='lg'
+    {...props}
   />
 )
 

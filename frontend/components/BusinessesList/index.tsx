@@ -6,7 +6,7 @@ import QueryHandlerWrapper from 'components/QueryHandlerWrapper'
 
 const businessListCss = {
   '@media (min-width: 700px)': {
-    'overscroll-behavior': 'contain'
+    overscrollBehavior: 'contain'
   }
 }
 
