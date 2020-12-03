@@ -1,33 +1,28 @@
 import { Flex } from '@chakra-ui/react'
 
-import Spinner from 'components/Spinner'
 import Business from 'components/Business'
 import useBusinessWithMostLocations from 'hooks/useBusinessWithMostLocations'
+import QueryHandlerWrapper from 'components/QueryHandlerWrapper'
 
 const BusinessWithMostLocations: React.FC = () => {
   const { data, isError, isLoading } = useBusinessWithMostLocations()
 
-  if (isError) {
-    return null
-  }
-
-  if (isLoading) {
-    return (
-      <Spinner />
-    )
-  }
-
   return (
-    <Flex
-      marginBottom={10}
-      width='full'
+    <QueryHandlerWrapper
+      isLoading={isLoading}
+      isError={isError}
     >
-      <Business
-        locationsNumber={data.locations_count}
-        badgeText='Most Locations'
-        name={data.business_name}
-      />
-    </Flex>
+      <Flex
+        marginBottom={10}
+        width='full'
+      >
+        <Business
+          locationsNumber={data?.locations_count}
+          badgeText='Most Locations'
+          name={data?.business_name}
+        />
+      </Flex>
+    </QueryHandlerWrapper>
   )
 }
 
