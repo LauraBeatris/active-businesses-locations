@@ -4,6 +4,10 @@
 
 > An app to show the list of businesses locations from LA
 
+<p align="center">
+  <img src=".github/docs/app.gif" width="250">
+</p>
+
 # Backend Instructions
 
 ## Installation
