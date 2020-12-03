@@ -1,4 +1,5 @@
 export interface BusinessProps {
+  locationStartDateString?: string;
   locationsNumber?: number;
   badgeText?: string;
   zipCode?: string;
