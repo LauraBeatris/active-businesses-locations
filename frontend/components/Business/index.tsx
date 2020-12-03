@@ -33,7 +33,6 @@ const Business: React.FC<BusinessProps> = ({
     borderColor='gray.200'
     borderWidth={2}
     position='relative'
-    minHeight={150}
     padding={4}
     width='full'
   >
