@@ -35,11 +35,12 @@ const BusinessesList: React.FC = () => {
       {
         data.map(business => (
           <Business
-            key={business.location_account}
+            locationStartDateString={business.location_start_date}
+            zipCode={business.zip_code}
+            street={business.street_address}
             name={business.business_name}
             city={business.city}
-            street={business.street_address}
-            zipCode={business.zip_code}
+            key={business.location_account}
           />
         ))
       }

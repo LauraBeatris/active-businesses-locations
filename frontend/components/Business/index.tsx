@@ -1,4 +1,6 @@
 import { Badge, Text, Box, VStack } from '@chakra-ui/react'
+import { format, parseISO } from 'date-fns'
+
 import { BusinessDataTextProps, BusinessProps } from './types'
 
 const BusinessDataText: React.FC<BusinessDataTextProps> = ({
@@ -20,6 +22,7 @@ const BusinessDataText: React.FC<BusinessDataTextProps> = ({
 }
 
 const Business: React.FC<BusinessProps> = ({
+  locationStartDateString,
   locationsNumber,
   badgeText,
   zipCode,
@@ -75,17 +78,24 @@ const Business: React.FC<BusinessProps> = ({
       />
 
       {
-        badgeText && (
-          <Badge
-            colorScheme='orange'
-            position='absolute'
-            right={-2}
-            top={-2}
-          >
-            {badgeText}
-          </Badge>
-        )
-      }
+          locationStartDateString && <BusinessDataText
+            label='Location Start Date'
+            value={format(parseISO(locationStartDateString), 'MM-dd-yyyy')}
+                                     />
+        }
+
+      {
+          badgeText && (
+            <Badge
+              colorScheme='orange'
+              position='absolute'
+              right={-2}
+              top={-2}
+            >
+              {badgeText}
+            </Badge>
+          )
+        }
     </VStack>
   </Box>
 )
