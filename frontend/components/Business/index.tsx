@@ -78,10 +78,12 @@ const Business: React.FC<BusinessProps> = ({
       />
 
       {
-          locationStartDateString && <BusinessDataText
-            label='Location Start Date'
-            value={format(parseISO(locationStartDateString), 'MM-dd-yyyy')}
-                                     />
+          locationStartDateString && (
+            <BusinessDataText
+              label='Location Start Date'
+              value={format(parseISO(locationStartDateString), 'MM-dd-yyyy')}
+            />
+          )
         }
 
       {
