@@ -78,26 +78,26 @@ const Business: React.FC<BusinessProps> = ({
       />
 
       {
-          locationStartDateString && (
-            <BusinessDataText
-              label='Location Start Date'
-              value={format(parseISO(locationStartDateString), 'MM-dd-yyyy')}
-            />
-          )
-        }
+        locationStartDateString && (
+          <BusinessDataText
+            label='Location Start Date'
+            value={format(parseISO(locationStartDateString), 'MM-dd-yyyy')}
+          />
+        )
+      }
 
       {
-          badgeText && (
-            <Badge
-              colorScheme='orange'
-              position='absolute'
-              right={-2}
-              top={-2}
-            >
-              {badgeText}
-            </Badge>
-          )
-        }
+        badgeText && (
+          <Badge
+            colorScheme='orange'
+            position='absolute'
+            right={-2}
+            top={-2}
+          >
+            {badgeText}
+          </Badge>
+        )
+      }
     </VStack>
   </Box>
 )
