@@ -4,7 +4,9 @@ import Business from 'components/Business'
 import useBusinesses from 'hooks/useBusinesses'
 
 const businessListCss = {
-  'overscroll-behavior': 'contain'
+  '@media (min-width: 700px)': {
+    'overscroll-behavior': 'contain'
+  }
 }
 
 const BusinessesList: React.FC = () => {
