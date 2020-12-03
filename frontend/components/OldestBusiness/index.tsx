@@ -1,10 +1,11 @@
-import { Flex, Spinner } from '@chakra-ui/react'
+import { Flex } from '@chakra-ui/react'
 
+import Spinner from 'components/Spinner'
 import Business from 'components/Business'
 import useOldestBusiness from 'hooks/useOldestBusiness'
 
 const OldestBusiness: React.FC = () => {
-  const { data, isLoading, isError } = useOldestBusiness()
+  const { data, isError, isLoading } = useOldestBusiness()
 
   if (isError) {
     return null
@@ -12,10 +13,7 @@ const OldestBusiness: React.FC = () => {
 
   if (isLoading) {
     return (
-      <Spinner
-        color='orange.100'
-        size='lg'
-      />
+      <Spinner />
     )
   }
 
