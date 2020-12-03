@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import Head from 'next/head'
 import { Flex, VStack } from '@chakra-ui/react'
+import Head from 'next/head'
 
 import seoConfig from 'config/seo'
 import Header from 'components/Header'
@@ -9,6 +9,7 @@ import OldestBusiness from 'components/OldestBusiness'
 import BusinessesList from 'components/BusinessesList'
 import BusinessFilters from 'components/BusinessFilters'
 import MaxWidthContainer from 'components/MaxWidthContainer'
+import BusinessWithMostLocations from 'components/BusinessWithMostLocations'
 import { BusinessFiltersValue } from 'components/BusinessFilters/types'
 
 const Main = () => {
@@ -56,6 +57,12 @@ const Main = () => {
             {
               businessFilterValue === BusinessFiltersValue.Oldest && (
                 <OldestBusiness />
+              )
+            }
+
+            {
+              businessFilterValue === BusinessFiltersValue.MostLocations && (
+                <BusinessWithMostLocations />
               )
             }
           </VStack>
