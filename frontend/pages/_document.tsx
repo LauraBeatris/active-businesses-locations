@@ -8,12 +8,12 @@ import Document, {
 class MyDocument extends Document {
   render (): JSX.Element {
     return (
-      <Html lang='pt' className='antialiased p-0 mx-0 outline-none box-border'>
+      <Html lang='pt'>
         <Head>
           <link rel='stylesheet' href='https://rsms.me/inter/inter.css' />
           <link rel='icon' href='favicon.ico' />
         </Head>
-        <body className='font-body min-w-screen'>
+        <body>
           <Main />
           <NextScript />
         </body>
