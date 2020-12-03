@@ -11,13 +11,15 @@ const apiMock = new AxiosMock(axios)
 describe('useBusinesses hook', () => {
   it('should fetch businesses', async () => {
     const queryCache = new QueryCache()
+
     const wrapper = ({ children }) => (
       <ReactQueryCacheProvider queryCache={queryCache}>
         {children}
       </ReactQueryCacheProvider>
     )
 
-    apiMock.onGet('businesses')
+    apiMock
+      .onGet('businesses')
       .reply(200, [businessMockData])
 
     const { result, waitFor } = renderHook(() => useBusinesses(), { wrapper })

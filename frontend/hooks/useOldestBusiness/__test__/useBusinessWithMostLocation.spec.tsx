@@ -11,13 +11,15 @@ const apiMock = new AxiosMock(axios)
 describe('useOldestBusiness hook', () => {
   it('should fetch oldest business', async () => {
     const queryCache = new QueryCache()
+
     const wrapper = ({ children }) => (
       <ReactQueryCacheProvider queryCache={queryCache}>
         {children}
       </ReactQueryCacheProvider>
     )
 
-    apiMock.onGet('businesses/most-location')
+    apiMock
+      .onGet('businesses/most-location')
       .reply(200, businessMockData)
 
     const { result, waitFor } = renderHook(() => useOldestBusiness(), { wrapper })
