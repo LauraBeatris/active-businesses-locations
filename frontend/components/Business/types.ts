@@ -1,10 +1,10 @@
 export interface BusinessProps {
+  locationsNumber?: number;
+  badgeText?: string;
+  zipCode?: string;
+  street?: string;
   name: string;
   city?: string;
-  street?: string;
-  zipCode?: string;
-  badgeText?: string;
-  locationsNumber?: number;
 }
 
 export interface BusinessDataTextProps {
