@@ -76,13 +76,6 @@ yarn build
 
 ### [Insomnia Backend Workspace](./.github/resources/insomnia-workspace.json)
 
-## Questions 
-
-- What data should be shown when listing the businesses?
-- What data should be shown for the oldest business?
-- What data should be shown for the business with the most locations?
-- Is there a preference for the limit of businesses to be shown on the first page?
-
 # License
 
 Released in 2020.
